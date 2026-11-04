@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Simple Website</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #1f2933;
+      background: #f7f9fb;
+    }
+
+    header {
+      background: #1d4e5f;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    header h1 { font-size: 1.25rem; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.25rem;
+    }
+    nav a:hover, nav a:focus-visible { text-decoration: underline; }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      background: #e3eef2;
+    }
+    .hero h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
+    .hero p { max-width: 36rem; margin: 0 auto 1.5rem; }
+    .button {
+      display: inline-block;
+      background: #1d4e5f;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .button:hover { background: #163c49; }
+
+    section { max-width: 52rem; margin: 0 auto; padding: 3rem 1.5rem; }
+    section h2 { margin-bottom: 1rem; }
+
+    form { display: grid; gap: 0.75rem; max-width: 28rem; }
+    input, textarea {
+      padding: 0.6rem;
+      border: 1px solid #b8c4cc;
+      border-radius: 6px;
+      font: inherit;
+    }
+    button {
+      background: #1d4e5f;
+      color: #fff;
+      border: 0;
+      padding: 0.7rem;
+      border-radius: 6px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #52606d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h2>Welcome to my website</h2>
+      <p>This is a simple starting point. Replace this text with a short sentence about you or your business.</p>
+      <a class="button" href="#contact">Get in touch</a>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Write a few sentences here about who you are and what you do. Edit any text in this file with a text editor, save it, and refresh your browser to see the change.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your name" aria-label="Your name">
+        <input type="email" placeholder="Your email" aria-label="Your email">
+        <textarea rows="4" placeholder="Your message" aria-label="Your message"></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 My Website
+  </footer>
+
+</body>
+</html>
